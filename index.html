@@ -21,6 +21,10 @@
             transition: transform 0.3s ease;
         }
         #no {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             animation: move 1s infinite;
         }
         @keyframes move {
@@ -30,6 +34,10 @@
             75% { transform: translate(0, 100px); }
             100% { transform: translate(0, 0); }
         }
+        .emoji {
+            font-size: 50px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -38,7 +46,11 @@
     <input type="text" id="nameInput" placeholder="Seu nome">
     <button class="btn" id="schedule">É só marcar</button>
     <button class="btn" id="no">Não</button>
+    <div id="responseEmoji" class="emoji"></div>
     <script src="script.js"></script>
+</body>
+</html>
+
         
  
 
