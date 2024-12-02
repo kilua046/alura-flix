@@ -2,54 +2,35 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Vídeos de Bruno Mars</title>
+    <title>Convite</title>
     <style>
         body {
-            background-color: #000000; /* Fundo preto */
-            color: #FFFFFF;            /* Letras brancas */
             font-family: Arial, sans-serif;
-            text-align: center;
         }
-        .video-container {
-            margin: 20px auto;
+        .btn {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 20px;
         }
-        .main-video {
-            margin-bottom: 40px;
+        #schedule {
+            transition: transform 0.3s ease;
         }
-        .secondary-videos {
-            display: flex;
-            justify-content: space-around;
+        #no {
+            animation: move 2s infinite;
         }
-        .secondary-video {
-            width: 22%;
-            background-color: #00008B; /* Azul escuro */
-            padding: 10px;
-            box-sizing: border-box;
-        }
-        a {
-            color: #FFFFFF;
-            text-decoration: none;
+        @keyframes move {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(100px); }
+            100% { transform: translateX(0); }
         }
     </style>
 </head>
 <body>
-    <h1>Vídeos de Bruno Mars</h1>
-    <div class="video-container main-video">
-        <a href="https://www.youtube.com/watch?v=2Z2aL_P16qE">Bruno Mars - Versace On The Floor</a>
-    </div>
-    <div class="secondary-videos">
-        <div class="secondary-video">
-            <a href="https://www.youtube.com/watch?v=UqyT8IEBkvY">Bruno Mars - 24K Magic</a>
-        </div>
-        <div class="secondary-video">
-            <a href="https://www.youtube.com/watch?v=PMivT7MJ41M">Bruno Mars - That's What I Like</a>
-        </div>
-        <div class="secondary-video">
-            <a href="https://www.youtube.com/watch?v=LsoLEjrDogU">Bruno Mars - Finesse (Remix) [Feat. Cardi B]</a>
-        </div>
-        <div class="secondary-video">
-            <a href="https://www.youtube.com/watch?v=OPf0YbXqDm0">Bruno Mars - Uptown Funk (Mark Ronson ft. Bruno Mars)</a>
-        </div>
-    </div>
+    <h1>Vamos ficar?</h1>
+    <p>Insira seu nome:</p>
+    <input type="text" id="nameInput" placeholder="Seu nome">
+    <button class="btn" id="schedule">É só marcar</button>
+    <button class="btn" id="no">Não</button>
+    <script src="script.js"></script>
 </body>
 </html>
