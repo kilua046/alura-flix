@@ -1,47 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Convite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
         body {
-            font-family: 'Parisienne', cursive;
             background-color: black;
-            color: red;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
         }
-        .btn {
-            font-size: 20px;
-            padding: 10px 20px;
+        .planet {
             margin: 20px;
-            color: red;
-            background-color: black;
-            border: 2px solid red;
-            position: relative;
         }
-        #schedule {
-            transition: transform 0.3s ease;
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
-        #no {
-            position: absolute;
+        h1, h2 {
+            font-size: 24px;
+            margin-top: 10px;
         }
-        .emoji {
-            font-size: 50px;
-            margin-top: 20px;
+        .video {
+            margin: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Vamos ficar?</h1>
-    <p>Insira seu nome:</p>
-    <input type="text" id="nameInput" placeholder="Seu nome">
-    <button class="btn" id="schedule">É só marcar</button>
-    <button class="btn" id="no">Não</button>
-    <div id="responseEmoji" class="emoji"></div>
+    <h1>O Sistema Solar</h1>
+    
+    <div class="planet">
+        <h2>Sol</h2>
+        <img src="URL_DA_IMAGEM_DO_SOL" alt="Imagem do Sol">
+    </div>
 
-    <!-- Áudio de clique suave -->
-    <audio id="clickSound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+    <div class="planet">
+        <h2>Mercúrio</h2>
+        <img src="URL_DA_IMAGEM_DE_MERCURIO" alt="Imagem de Mercúrio">
+    </div>
 
-    <script src="script.js"></script>
+    <div class="planet">
+        <h2>Vênus</h2>
+        <img src="URL_DA_IMAGEM_DE_VENUS" alt="Imagem de Vênus">
+    </div>
+
+    <div class="planet">
+        <h2>Terra</h2>
+        <img src="URL_DA_IMAGEM_DA_TERRA" alt="Imagem da Terra">
+    </div>
+
+    <div class="planet">
+        <h2>Marte</h2>
+        <img src="URL_DA_IMAGEM_DE_MARTE" alt="Imagem de Marte">
+    </div>
+
+    <div class="planet">
+        <h2>Júpiter</h2>
+        <img src="URL_DA_IMAGEM_DE_JUPITER" alt="Imagem de Júpiter">
+    </div>
+
+    <div class="planet">
+        <h2>Saturno</h2>
+        <img src="URL_DA_IMAGEM_DE_SATURNO" alt="Imagem de Saturno">
+    </div>
+
+    <div class="planet">
+        <h2>Urano</h2>
+        <img src="URL_DA_IMAGEM_DE_URANO" alt="Imagem de Urano">
+    </div>
+
+    <div class="planet">
+        <h2>Netuno</h2>
+        <img src="URL_DA_IMAGEM_DE_NETUNO" alt="Imagem de Netuno">
+    </div>
+
+    <div class="video">
+        <h2>Vídeo sobre o Sistema Solar</h2>
+        <video controls>
+            <source src="URL_DO_VIDEO" type="video/mp4">
+            Seu navegador não suporta a exibição de vídeo.
+        </video>
+    </div>
 </body>
 </html>
