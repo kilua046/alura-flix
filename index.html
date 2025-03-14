@@ -6,23 +6,36 @@
     <title>Sistema Solar</title>
     <style>
         body {
-            background-color: black;
-            text-align: center;
+            background: url('https://img.freepik.com/fotos-premium/imagem-minimalista-do-sistema-solar-em-cores-preto-e-branco-sobre-fundo-escuro_946657-9385.jpg') no-repeat center center fixed; /* Adiciona a imagem de fundo */
+            background-size: cover; /* Faz a imagem de fundo cobrir toda a tela */
+            text-align: left;
             font-family: Arial, sans-serif;
-            color: white;
+            color: beige;
         }
         .planet {
             margin: 20px;
+            display: flex;
+            align-items: center;
         }
         img {
-            max-width: 100%;
+            width: 200px; /* Define a largura das imagens em pixels */
             height: auto;
-            display: block;
-            margin: 0 auto;
+            margin-right: 20px; /* Espaço entre a imagem e o texto */
         }
-        h1, h2 {
-            font-size: 24px;
+        h1 {
+            font-size: 32px; /* Tamanho maior para o título principal */
             margin-top: 10px;
+            color: beige; /* Cor do título principal */
+        }
+        h2 {
+            font-size: 20px; /* Tamanho maior para os títulos dos planetas */
+            margin-top: 10px;
+            color: beige; /* Cor dos títulos dos planetas */
+        }
+        p {
+            font-size: 18px; /* Tamanho maior para o texto */
+            margin: 10px 0;
+            color: beige; /* Cor do texto */
         }
         .video {
             margin: 20px;
@@ -33,56 +46,80 @@
     <h1>O Sistema Solar</h1>
     
     <div class="planet">
-        <h2>Sol</h2>
-        <img src="URL_DA_IMAGEM_DO_SOL" alt="Imagem do Sol">
+        <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2022/04/12/675x450/1_solar_orbiter-7751171.jpg?20220412155825?20220412155825" alt="Imagem do Sol">
+        <div>
+            <h2>Sol</h2>
+            <p>O Sol é a estrela central do nosso sistema solar. Ele fornece luz e calor essenciais para a vida na Terra.</p>
+        </div>
     </div>
 
     <div class="planet">
-        <h2>Mercúrio</h2>
-        <img src="URL_DA_IMAGEM_DE_MERCURIO" alt="Imagem de Mercúrio">
+        <img src="https://cdn.pixabay.com/video/2022/03/18/111197-689949812_tiny.jpg" alt="Imagem de Mercúrio">
+        <div>
+            <h2>Mercúrio</h2>
+            <p>Mercúrio é o menor e mais interno planeta do sistema solar. Ele tem uma superfície rochosa e crateras semelhantes à Lua.</p>
+        </div>
     </div>
 
     <div class="planet">
-        <h2>Vênus</h2>
-        <img src="URL_DA_IMAGEM_DE_VENUS" alt="Imagem de Vênus">
+        <img src="https://i.pinimg.com/736x/f2/db/6e/f2db6efc3fd86f3172c0ade116773c85.jpg" alt="Imagem de Vênus">
+        <div>
+            <h2>Vênus</h2>
+            <p>Vênus é o segundo planeta a partir do Sol e é conhecido por sua atmosfera densa e temperaturas extremas.</p>
+        </div>
     </div>
 
     <div class="planet">
-        <h2>Terra</h2>
-        <img src="URL_DA_IMAGEM_DA_TERRA" alt="Imagem da Terra">
+        <img src="https://wallpapers.com/images/featured/4k-terra-mjzy86rw1nwqbofb.jpg" alt="Imagem da Terra">
+        <div>
+            <h2>Terra</h2>
+            <p>A Terra é o terceiro planeta do sistema solar e o único conhecido por abrigar vida. Sua atmosfera é rica em oxigênio.</p>
+        </div>
     </div>
 
     <div class="planet">
-        <h2>Marte</h2>
-        <img src="URL_DA_IMAGEM_DE_MARTE" alt="Imagem de Marte">
+        <img src="https://i.pinimg.com/736x/63/f7/3c/63f73cb4a29f17181fcb886603ca78b7.jpg" alt="Imagem de Marte">
+        <div>
+            <h2>Marte</h2>
+            <p>Marte é o quarto planeta a partir do Sol e é conhecido como o Planeta Vermelho devido à sua cor característica.</p>
+        </div>
     </div>
 
     <div class="planet">
-        <h2>Júpiter</h2>
-        <img src="URL_DA_IMAGEM_DE_JUPITER" alt="Imagem de Júpiter">
+        <img src="https://wallpapers.com/images/hd/colorful-jupiter-4k-u0vxq4j32tby8tox.jpg" alt="Imagem de Júpiter">
+        <div>
+            <h2>Júpiter</h2>
+            <p>Júpiter é o maior planeta do sistema solar, conhecido por sua Grande Mancha Vermelha, uma enorme tempestade.</p>
+        </div>
     </div>
 
     <div class="planet">
-        <h2>Saturno</h2>
-        <img src="URL_DA_IMAGEM_DE_SATURNO" alt="Imagem de Saturno">
+        <img src="https://img.freepik.com/fotos-premium/ilustracao-3d-planeta-saturno-no-espaco-sideral_124437-2039.jpg" alt="Imagem de Saturno">
+        <div>
+            <h2>Saturno</h2>
+            <p>Saturno é o sexto planeta do sistema solar e é famoso por seus magníficos anéis feitos de gelo e poeira.</p>
+        </div>
     </div>
 
     <div class="planet">
-        <h2>Urano</h2>
-        <img src="URL_DA_IMAGEM_DE_URANO" alt="Imagem de Urano">
+        <img src="https://img.freepik.com/fotos-gratis/esfera-abstrata-brilha-em-liquido-subaquatico-azul-gerado-por-ia_188544-22051.jpg" alt="Imagem de Urano">
+        <div>
+            <h2>Urano</h2>
+            <p>Urano é o sétimo planeta a partir do Sol e tem uma cor azul-esverdeada devido ao metano em sua atmosfera.</p>
+        </div>
     </div>
 
     <div class="planet">
-        <h2>Netuno</h2>
-        <img src="URL_DA_IMAGEM_DE_NETUNO" alt="Imagem de Netuno">
+        <img src="https://s4.static.brasilescola.uol.com.br/be/2022/08/1-planeta-netuno.jpg" alt="Imagem de Netuno">
+        <div>
+            <h2>Netuno</h2>
+            <p>Netuno é o oitavo planeta do sistema solar e é conhecido por seus ventos fortes e cor azul profunda.</p>
+        </div>
     </div>
 
     <div class="video">
         <h2>Vídeo sobre o Sistema Solar</h2>
-        <video controls>
-            <source src="URL_DO_VIDEO" type="video/mp4">
-            Seu navegador não suporta a exibição de vídeo.
-        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-oie4EFLs_0?si=MOrx2mNvrUWgCqwO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 </body>
 </html>
